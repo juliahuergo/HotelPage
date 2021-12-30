@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>La Capricciosa</title>
+		<link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css">
+		<script href = "https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/js/bootstrap.min.js"></script>
+		<script href = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<style>
+			@media(min-width: 10px){
+				a {
+					color: black; 
+				}
+			}
+			nav {
+				position: relative; 
+				flex-wrap: nowrap;
+				background-color: white;
+			}
+			.row {
+				padding-top: 10px; 
+			}
+		</style>
+	</head>
+	<body>
+		<header id = "header">
+			<nav id = "nav-bar" class = "navbar navbar-expand-md fixed-top">
+				<img id = "header-img" src = "https://github.com/juliahuergo/HotelPage/blob/main/logo.png?raw=true" style = "width: 150px">
+				<div class="collapse navbar-collapse">
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a class="nav-link" href="#">Welcome</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Restaurant&Bar</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Contact</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		<div class = "row" id = "welcome">
+			<div class = "col-md-12">
+				<img src="https://fishhotels-api.derbyhotels.com/storage/grehd/5e4183dde49313c4cce901da/xxl/terraza-19.jpg" style = "width: 100%">
+			</div>
+		</div>
+		<div class="container">
+			<div class = "row" id = "restaurant">
+				<div class="col-md-12">
+					<h1> Felino </h1>
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/fF_Hd1u5A9Q?start=5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style = "width: 100%">
+					</iframe>
+				</div>
+			</div>
+			<div class = "row" id = "contact">
+				<div class = "col-md-12">
+					<h1>Contact</h1>
+					<p>Have any doubt or suggestion to make? Offer us your information so that our team may respond within 24hr</p>
+					<form id="form" action="https://www.freecodecamp.com/email-submit">
+						<div class = "row">
+							<div class = "col-md-6">
+								<div class="form-group mb-3">
+									<input
+										name="name"
+										id="name"
+										type="name"
+										placeholder="Name"
+										optional
+										style= "width:100%"
+										>
+								</div>
+							</div>
+							<div class = "col-md-6">
+								<div class="form-group mb-3">
+									<input
+										name="email"
+										id="email"
+										type="email"
+										placeholder="Email adress"
+										optional
+										style= "width:100%"
+										>
+								</div>
+							</div>
+						</div>
+						<div class = "row">
+							<div class = "col-md-12">
+								<div class="form-group mb-3">
+									<input name="subject"
+										id="subject"
+										type="subject"
+										placeholder="Subject"
+										optional
+										style= "width:100%">
+								</div>
+								<div class="form-group mb-3">
+									<input
+										name="comment"
+										id="comment"
+										type="comment"
+										placeholder="Comment"
+										optional
+										style= "width:100%"
+										rows="10"
+										>
+								</div>
+								<button id="submit" type="submit" value="Done" class="btn btn-primary" style="width:100%">Submit</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
